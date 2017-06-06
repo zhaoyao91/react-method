@@ -1,8 +1,9 @@
 {
   "name": "react-method",
-  "version": "0.0.1",
-  "description": "define methods for react comopnents throgh props",
+  "version": "0.0.2",
+  "description": "define methods for react components through props",
   "main": "lib/index.js",
+  "repository": "https://github.com/zhaoyao91/react-method.git",
   "dependencies": {},
   "devDependencies": {
     "babel-cli": "^6.24.1",
