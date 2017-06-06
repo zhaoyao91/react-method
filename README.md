@@ -3,7 +3,15 @@
 Define methods for React components through props.
 
 ## Motivation
-todo
+
+### Encapsulation
+Sometimes we want to encapsulate some functionality(method) into a component because it is the best place for having related data or other reasons. For example, we want a notification component with method `send`, or a form component with method `submit`.
+ 
+### Invocation
+Since we defined a method for a component, it should be invoked by other components. How? It seems that we can use `ref` to reference that component, but ...
+ 
+### `ref` is bad
+There are enough articles to argue about this. For me, one key point is that normal class method cannot be inherited when component is extended with HOC mode.
 
 ## Usage
 
