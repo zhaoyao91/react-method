@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 
 export function createMethod () {
   let _method = null
@@ -16,7 +16,7 @@ export function createMethod () {
 
 export function withMethod (name) {
   return function (Component) {
-    return class WithMethod extends Component {
+    return class WithMethod extends React.Component {
       _method = createMethod()
 
       render () {
@@ -33,7 +33,7 @@ export function withMethod (name) {
  */
 export function defineMethod (name, definition) {
   return function (Component) {
-    return class DefineMethod extends Component {
+    return class DefineMethod extends React.Component {
       componentWillMount () {
         this.defineMethod(this.props)
       }
